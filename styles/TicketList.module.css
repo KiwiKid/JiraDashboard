@@ -1,0 +1,232 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bigHeader:hover {
+  visibility: visible;
+}
+
+.bigHeader .icon {
+  visibility: visible;
+}
+.bigHeader .icon {
+  visibility: hidden;
+}
+.bigCard .cardHeader {
+  font-size: 1200; 
+  font-weight: 700;
+}
+
+.cardHeader {
+  font-size: larger;  
+  font-weight: 700;
+  float: left;
+  width: 50%;
+}
+
+.smallHeader{
+  font-weight: 600;
+  font-size: medium;
+}
+
+/*.bigHeader, .smallHeader {background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%)}*/
+.bigHeader , .smallHeader{
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: black;            
+   font-size: large;
+   font-weight: 600;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .bigHeader:hover, .smallHeader:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: lightgrey;
+   text-decoration: none;
+ }
+
+.bigHeader .icon {
+  display: inline-flex;
+  align-self: center;
+  top: .525em;
+  position: relative;
+}
+
+.row { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 33%;
+}
+
+.description {
+  border: 2px solid darkblue;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+}
+
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linkHeader{
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.labelContainer {
+  width: '100%';
+  float:'left';
+}
+
+.bigCard .labels {
+  width: '10%';
+  background-color: 'green';
+  float:'left';
+}
+
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 2400px;
+  margin-top: 3rem;
+}
+.smallCard {
+  max-width: 600px;
+}
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.smallCard { 
+  width: 40%;
+}
+
+.bigCard {
+  width: 100%;
+}
+
+.smallcard:hover,
+.smallcard:focus,
+.smallcard:active h1, .card:active h2, .card:active h3 {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.comment {
+  border: 1px solid green;
+  border-radius: 10px;
+  border-color: #0070f3;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

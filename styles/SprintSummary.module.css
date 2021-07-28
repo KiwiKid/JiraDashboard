@@ -1,0 +1,30 @@
+
+.labels {
+    background-color: 'red';
+    width: '100px';
+    height: '100px';
+    padding: '3px';
+    margin: '3px';
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .labelsTitle{
+    font-style: italic;
+  }
+
+  .container {
+      display: flex;
+  }
+  .state{
+    flex: 1
+  }
+  .goal { 
+    flex: 1
+  }
+  .header {
+    flex: 1;
+    text-decoration: underline;
+    
+  }
